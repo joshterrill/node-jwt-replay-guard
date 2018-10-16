@@ -22,8 +22,6 @@ class NodeJWTReplayGuard {
   replayGuard(req, res, next) {
     const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     const token = req.headers['authorization'] ? req.headers['authorization'].replace(/Bearer /g, '') : undefined;
-    console.log('IP Address is: ' + ip);
-    console.log('Token is: ' + token);
     if (!JWT_SECRET && process.env.JWT_SECRET) {
       this.setJWTSecret(process.env.JWT_SECRET);
     } else if (!JWT_SECRET && !process.env.JWT_SECRET) {
@@ -31,11 +29,8 @@ class NodeJWTReplayGuard {
     }
     const decoded = jwt.decode(token, JWT_SECRET);
     if (decoded) {
-      console.log('Going to check cache');
       const tokenStore = cache.get(ip);
-      console.log(tokenStore);
       if (tokenStore === token) {
-        console.log('IP/Token matches');
         next();
       } else {
         throw new Error('Unauthorized');

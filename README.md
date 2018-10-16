@@ -21,6 +21,7 @@ npm i node-jwt-replay-guard --save
 
 ```javascript
 const express = require('express');
+const jwt = require('jwt-simple');
 const njrg = require('node-jwt-replay-guard');
 const app = express();
 

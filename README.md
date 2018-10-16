@@ -21,7 +21,7 @@ npm i node-jwt-replay-guard --save
 
 ```javascript
 const express = require('express');
-const njrg = require('nodw-jwt-replay-guard');
+const njrg = require('node-jwt-replay-guard');
 const app = express();
 
 const JWT_SECRET = 'test';

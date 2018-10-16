@@ -1,0 +1,35 @@
+{
+  "name": "node-jwt-replay-guard",
+  "version": "1.0.0",
+  "description": "prevents malicious people from performing replay attacks using stolen JWT tokens",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "jwt-simple": "^0.5.5",
+    "node-cache": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshterrill/node-jwt-replay-guard.git"
+  },
+  "keywords": [
+    "replay",
+    "guard",
+    "replay",
+    "guard",
+    "jwt",
+    "authorization",
+    "csrf",
+    "attack"
+  ],
+  "author": "Josh Terrill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshterrill/node-jwt-replay-guard/issues"
+  },
+  "homepage": "https://github.com/joshterrill/node-jwt-replay-guard#readme"
+}

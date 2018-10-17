@@ -1,6 +1,6 @@
 {
   "name": "node-jwt-replay-guard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "prevents malicious people from performing replay attacks using stolen JWT tokens",
   "main": "index.js",
   "dependencies": {

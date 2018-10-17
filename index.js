@@ -25,7 +25,7 @@ class NodeJWTReplayGuard {
     if (!JWT_SECRET && process.env.JWT_SECRET) {
       this.setJWTSecret(process.env.JWT_SECRET);
     } else if (!JWT_SECRET && !process.env.JWT_SECRET) {
-      throw new Error('JWT Secret not defined in node-replay-guard');
+      throw new Error('JWT Secret not defined in node-jwt-replay-guard');
     }
     const decoded = jwt.decode(token, JWT_SECRET);
     if (decoded) {

@@ -1,6 +1,6 @@
 {
   "name": "node-jwt-replay-guard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "prevents malicious people from performing replay attacks using stolen JWT tokens",
   "main": "index.js",
   "dependencies": {
@@ -24,7 +24,10 @@
     "jwt",
     "authorization",
     "csrf",
-    "attack"
+    "attack",
+    "session attack",
+    "replay attack",
+    "hack"
   ],
   "author": "Josh Terrill",
   "license": "MIT",

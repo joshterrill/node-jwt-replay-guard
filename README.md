@@ -2,8 +2,6 @@
 
 prevents malicious people from performing replay attacks using stolen JWT tokens.
 
-**This is a working demo, but is still a work in progress. -jt**
-
 #### Install
 
 
